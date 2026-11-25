@@ -1,0 +1,21 @@
+:root{--main:#1f5a7a;--ink:#14232c;--bg:#f2f6f8;--line:#c9d9e1}
+*{box-sizing:border-box;margin:0}
+body{font-family:'Cairo',Tahoma,sans-serif;background:var(--bg);color:var(--ink);line-height:1.9;font-size:18px}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.hero{background:var(--main);color:#fff;padding:72px 0 56px}
+.role{font-size:15px;opacity:.85;margin-bottom:12px}
+h1{font-weight:900;font-size:clamp(46px,12vw,88px);line-height:1.1}
+.age{margin-top:16px;opacity:.85}
+section{padding:44px 0;border-bottom:1px solid var(--line)}
+h2{font-size:15px;font-weight:600;color:var(--main);margin-bottom:14px}
+.about p{font-size:clamp(20px,3.4vw,24px);font-weight:600;margin-bottom:8px;max-width:34em}
+.skills ul{list-style:none;padding:0}
+.skills li{padding:14px 0;border-bottom:1px solid var(--line);position:relative;padding-inline-start:22px}
+.skills li:last-child{border-bottom:0}
+.skills li::before{content:"";position:absolute;inset-inline-start:0;top:26px;width:9px;height:9px;background:var(--main);border-radius:50%}
+.contact{border-bottom:0}
+.btn{display:inline-block;margin-top:14px;background:var(--main);color:#fff;text-decoration:none;padding:12px 26px;border-radius:6px;font-weight:600;direction:ltr;word-break:break-all}
+.btn:hover{background:#174660}
+a:focus-visible{outline:3px solid #f0b429;outline-offset:3px}
+footer{padding:28px 0;color:#5b7480;font-size:14px;border-top:1px solid var(--line)}
+@media(max-width:480px){body{font-size:17px}.hero{padding:52px 0 40px}}
